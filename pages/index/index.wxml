@@ -9,5 +9,7 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+    <contact-button type="default-light" size="20" session-from="weapp">
+    </contact-button>
   </view>
 </view>
