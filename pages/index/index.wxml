@@ -8,6 +8,8 @@
     </block>
   </view>
   <view class="usermotto">
+    <button size="default" type="default" pain="true" bindtap="bindShowModal">显示Modal</button>
+    <button size="default" type="primary" pain="true" open-type="contact" bindcontact="{{bindContact}}">联系客服</button>
     <text class="user-motto">{{motto}}</text>
     <contact-button type="default-light" size="20" session-from="weapp">
     </contact-button>

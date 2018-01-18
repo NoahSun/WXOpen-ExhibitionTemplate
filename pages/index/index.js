@@ -15,6 +15,34 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindContact: function (arg) {
+    console.log(arg);
+  },
+  bindShowModal: function (arg) {
+    console.log(arg);
+    wx.showModal({
+      title: "一个自定义Modal Title",
+      content: "自定义的Modal Content",
+      showCancel: true,
+      cancelText: "关闭",
+      cancelColor: "#AF20BB",
+      confirmText: "确认",
+      confirmColor: "#3CC51F",
+      success: function ({ confirm, cancel }) {
+        if (confirm) {
+          console.log("Confirm");
+        } else if (cancel) {
+          console.log("Cancel");
+        }
+      },
+      fail: function () {
+        console.log("fail");
+      },
+      complete: function () {
+        console.log("complete");
+      }
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
