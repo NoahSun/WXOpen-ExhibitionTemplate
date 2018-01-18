@@ -4,11 +4,13 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" src="http://tmp/wxb2ce9832db093a41.o6zAJs9EFiOC4bJ3TGzUfFILMP0Q.3553dca9fd9ac14ba36fd789f7c7e42d.png" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
   <view class="usermotto">
     <button size="default" type="default" pain="true" bindtap="bindShowModal">显示Modal</button>
+    <button size="default" type="default" pain="false" bindtap="bindChooseImg">选择图片</button>
     <button size="default" type="primary" pain="true" open-type="contact" bindcontact="{{bindContact}}">联系客服</button>
     <text class="user-motto">{{motto}}</text>
     <contact-button type="default-light" size="20" session-from="weapp">
