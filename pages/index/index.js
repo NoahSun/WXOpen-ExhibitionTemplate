@@ -1,6 +1,7 @@
 //index.js
+const util = require('../../utils/util.js');
 //获取应用实例
-const app = getApp()
+const app = getApp();
 
 Page({
   data: {
@@ -84,6 +85,7 @@ Page({
     }
   },
   onReady: function () {
+    util.callWXFn('1234')
   },
   getUserInfo: function (e) {
     console.log(e)
