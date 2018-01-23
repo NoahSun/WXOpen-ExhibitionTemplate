@@ -85,7 +85,7 @@ Page({
     }
   },
   onReady: function () {
-    util.callWXFn('1234')
+    
   },
   getUserInfo: function (e) {
     console.log(e)
