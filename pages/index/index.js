@@ -117,6 +117,7 @@ Page({
   onReachBottom() {
     console.log('on reach bottom');
   },
+  onReady: function() {},
   getUserInfo: function(e) {
     console.log(e);
     app.globalData.userInfo = e.detail.userInfo;
